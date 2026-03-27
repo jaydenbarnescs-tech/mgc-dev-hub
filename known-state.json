@@ -49,5 +49,9 @@
     "/tools/komatsu-rag",
     "/tools/isp-dashboard"
   ],
-  "seeded_at": "2026-03-28T00:00:00.000Z"
+  "seeded_at": "2026-03-28T00:00:00.000Z",
+  "vm_static_dirs": [
+    "hikari",
+    "html"
+  ]
 }
