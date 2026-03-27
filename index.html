@@ -545,10 +545,10 @@
         if (c.type === 'new_repo') {
           const who = c.owner === 'jayden' ? '🅙' : '🅜';
           return `<span class="banner-item repo">${who} ${c.repo}</span>`;
+        } else if (c.type === 'new_vm_dir') {
+          return `<span class="banner-item vm">🖥 ${c.dir}</span>`;
         } else {
           return `<span class="banner-item route">${c.route}</span>`;
-        } else {
-          return `<span class="banner-item vm">🖥 ${c.dir}</span>`;
         }
       }).join('');
 
