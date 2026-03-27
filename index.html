@@ -182,12 +182,12 @@
   </div>
 
   <div class="filters">
-    <button class="filter-btn active" onclick="setFilter('all')">すべて</button>
-    <button class="filter-btn" onclick="setFilter('jayden')">👤 Jayden</button>
-    <button class="filter-btn" onclick="setFilter('matsuo')">👤 松尾</button>
+    <button class="filter-btn active" onclick="setFilter('all', this)">すべて</button>
+    <button class="filter-btn" onclick="setFilter('jayden', this)">👤 Jayden</button>
+    <button class="filter-btn" onclick="setFilter('matsuo', this)">👤 松尾</button>
     <div class="filter-sep"></div>
-    <button class="filter-btn" onclick="setFilter('live')">🟢 デプロイ済み</button>
-    <button class="filter-btn" onclick="setFilter('dev')">🟡 開発中</button>
+    <button class="filter-btn" onclick="setFilter('live', this)">🟢 デプロイ済み</button>
+    <button class="filter-btn" onclick="setFilter('dev', this)">🟡 開発中</button>
   </div>
 
   <!-- ═══ JAYDEN ═══════════════════════════════════════════ -->
@@ -569,9 +569,9 @@
 
   document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP');
 
-  function setFilter(f) {
+  function setFilter(f, btn) {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    event.currentTarget.classList.add('active');
+    if (btn) btn.classList.add('active');
     document.querySelectorAll('.card').forEach(card => {
       const owner = card.dataset.owner;
       const live  = card.dataset.live === 'true';
