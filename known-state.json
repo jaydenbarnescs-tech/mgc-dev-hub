@@ -1,0 +1,49 @@
+{
+  "repos": {
+    "jayden": [
+      "nippo-sync",
+      "nippou-syncro-kun",
+      "oracle-server",
+      "sorabito-komatsu-voice-ai",
+      "isp-approach-bot",
+      "mgc-research-agent",
+      "mgc-dev-hub"
+    ],
+    "matsuo": [
+      "MGC-inc.",
+      "musemaker-suite",
+      "nishio-kenki-widget",
+      "kedepot-voiceagent-demo",
+      "influencer-ai",
+      "voice-ai-demo",
+      "collectify",
+      "agent-identity-protocol",
+      "elevenlabs-agent",
+      "love-yourself",
+      "sophia-ai",
+      "speaksim",
+      "Math-Quest",
+      "PR-AUTO"
+    ]
+  },
+  "nippo_sync_routes": [
+    "/dashboard",
+    "/new",
+    "/report/[id]",
+    "/profile",
+    "/admin",
+    "/admin/outreach",
+    "/admin/pipeline",
+    "/login",
+    "/join/[token]",
+    "/card",
+    "/chirashi",
+    "/shop/[brand]",
+    "/shop/[brand]/[product]",
+    "/shop/[brand]/success",
+    "/tools/pricing-affiliate",
+    "/tools/komatsu-rag",
+    "/tools/isp-dashboard"
+  ],
+  "seeded_at": "2026-03-28T00:00:00.000Z"
+}
