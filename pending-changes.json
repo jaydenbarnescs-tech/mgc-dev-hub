@@ -1,4 +1,12 @@
 {
-  "changes": [],
-  "last_scan": null
+  "changes": [
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "mgc-dev-hub",
+      "detected_at": "2026-03-27T17:09:57.388Z"
+    }
+  ],
+  "last_scan": "2026-03-27T17:09:57.388Z"
 }
