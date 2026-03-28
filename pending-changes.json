@@ -1,4 +1,14 @@
 {
-  "changes": [],
-  "last_scan": null
+  "changes": [
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "mgc-embedding-service",
+      "description": "MGC Embedding Microservice — Ollama BGE-M3/qwen3 embedding API. Shared service for nippo-sync RAG and sorabito-komatsu voice AI. Oracle VM port 9300.",
+      "url": "",
+      "detected_at": "2026-03-28T15:30:17.344Z"
+    }
+  ],
+  "last_scan": "2026-03-28T15:30:17.344Z"
 }
