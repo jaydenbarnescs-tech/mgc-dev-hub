@@ -33,7 +33,16 @@
       "dir": "mgc-accelerator-hub",
       "url": "https://mgc-pass-proxy.duckdns.org/mgc-accelerator-hub/",
       "detected_at": "2026-03-31T16:30:17.542Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "yt-short-clipper-web",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-04-02T15:30:17.490Z"
     }
   ],
-  "last_scan": "2026-04-02T15:00:17.703Z"
+  "last_scan": "2026-04-02T15:30:17.490Z"
 }
