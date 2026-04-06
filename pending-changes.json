@@ -51,7 +51,14 @@
       "description": "MGC 見積書・請求書 自動生成ツール — MCP tools for Claude + Node.js docx generator",
       "url": "",
       "detected_at": "2026-04-03T06:30:17.429Z"
+    },
+    {
+      "type": "new_vm_dir",
+      "owner": "jayden",
+      "dir": "hikari.bak.20260406",
+      "url": "https://mgc-pass-proxy.duckdns.org/hikari.bak.20260406/",
+      "detected_at": "2026-04-06T10:30:17.904Z"
     }
   ],
-  "last_scan": "2026-04-06T10:00:17.497Z"
+  "last_scan": "2026-04-06T10:30:17.904Z"
 }
