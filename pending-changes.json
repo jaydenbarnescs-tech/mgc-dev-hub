@@ -141,7 +141,16 @@
       "repo": "nippo-sync",
       "route": "/terms",
       "detected_at": "2026-04-08T08:00:17.739Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "clone-any-site",
+      "description": "A practical playbook for recreating any live website as a self-contained single-file HTML deliverable — with an AI-assisted primary path, a manual fallback, and a reusable image-embedding helper.",
+      "url": "",
+      "detected_at": "2026-04-08T16:00:17.650Z"
     }
   ],
-  "last_scan": "2026-04-08T15:30:17.710Z"
+  "last_scan": "2026-04-08T16:00:17.650Z"
 }
