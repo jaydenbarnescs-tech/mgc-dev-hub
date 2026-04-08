@@ -93,7 +93,15 @@
       "description": "MGC翻訳ワークフロー — glossaries, SKILL.md, review pipeline for EN/CN→JP translation jobs",
       "url": "",
       "detected_at": "2026-04-07T05:00:17.476Z"
+    },
+    {
+      "type": "new_route",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "nippo-sync",
+      "route": "/admin/lp",
+      "detected_at": "2026-04-08T04:30:17.357Z"
     }
   ],
-  "last_scan": "2026-04-08T04:00:17.350Z"
+  "last_scan": "2026-04-08T04:30:17.357Z"
 }
