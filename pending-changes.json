@@ -117,7 +117,15 @@
       "repo": "nippo-sync",
       "route": "/sheets/connect/[slug]",
       "detected_at": "2026-04-08T05:30:17.592Z"
+    },
+    {
+      "type": "new_route",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "nippo-sync",
+      "route": "/lp/[slug]/admin",
+      "detected_at": "2026-04-08T06:30:17.641Z"
     }
   ],
-  "last_scan": "2026-04-08T06:00:17.372Z"
+  "last_scan": "2026-04-08T06:30:17.641Z"
 }
