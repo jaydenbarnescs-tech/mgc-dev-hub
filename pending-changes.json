@@ -159,7 +159,15 @@
       "description": "MGC skill: bootstrap a complete 採用LP for a client from a single reference URL. Scrapes design + content, fills gaps with AI, posts to nippo-sync. Target: under 2 minutes from prompt to live URL.",
       "url": "",
       "detected_at": "2026-04-09T04:00:17.501Z"
+    },
+    {
+      "type": "new_route",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "nippo-sync",
+      "route": "/lp/[slug]/claim",
+      "detected_at": "2026-04-09T05:30:17.516Z"
     }
   ],
-  "last_scan": "2026-04-09T05:00:17.560Z"
+  "last_scan": "2026-04-09T05:30:17.516Z"
 }
