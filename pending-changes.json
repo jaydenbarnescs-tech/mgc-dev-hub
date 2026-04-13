@@ -183,7 +183,16 @@
       "dir": "onenote-images",
       "url": "https://mgc-pass-proxy.duckdns.org/onenote-images/",
       "detected_at": "2026-04-12T13:00:48.659Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "open-salvage",
+      "description": "MGC AI assistant workspace — shared config, skills, and identity for the Vanessa (VP秘書) agent",
+      "url": "",
+      "detected_at": "2026-04-13T05:00:50.542Z"
     }
   ],
-  "last_scan": "2026-04-13T04:30:50.444Z"
+  "last_scan": "2026-04-13T05:00:50.542Z"
 }
