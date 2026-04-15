@@ -210,7 +210,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-04-14T03:00:50.499Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "obsidian-linkedin-autoposter",
+      "description": "Voice note → LinkedIn post pipeline. Drop audio/md into Obsidian, Claude polishes it, queues and auto-posts at 1pm JST.",
+      "url": "",
+      "detected_at": "2026-04-15T08:00:50.647Z"
     }
   ],
-  "last_scan": "2026-04-15T07:30:50.441Z"
+  "last_scan": "2026-04-15T08:00:50.647Z"
 }
