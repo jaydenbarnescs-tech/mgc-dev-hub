@@ -228,7 +228,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-04-20T04:30:50.644Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "lovable-flow",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-04-20T05:00:50.585Z"
     }
   ],
-  "last_scan": "2026-04-20T04:30:50.644Z"
+  "last_scan": "2026-04-20T05:00:50.585Z"
 }
