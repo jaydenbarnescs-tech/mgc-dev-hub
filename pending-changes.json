@@ -219,7 +219,16 @@
       "description": "Voice note → LinkedIn post pipeline. Drop audio/md into Obsidian, Claude polishes it, queues and auto-posts at 1pm JST.",
       "url": "",
       "detected_at": "2026-04-15T08:00:50.647Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "mgc-taskflow",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-04-20T04:30:50.644Z"
     }
   ],
-  "last_scan": "2026-04-20T04:00:50.440Z"
+  "last_scan": "2026-04-20T04:30:50.644Z"
 }
