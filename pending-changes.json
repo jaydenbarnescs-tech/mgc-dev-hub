@@ -237,7 +237,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-04-20T05:00:50.585Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "sales-ai-oss",
+      "description": "AIリード探索エージェント（日本語対応・OSS実装／origami.chatインスパイア）",
+      "url": "https://sales-ai-oss.vercel.app",
+      "detected_at": "2026-04-22T09:30:50.607Z"
     }
   ],
-  "last_scan": "2026-04-22T09:00:50.637Z"
+  "last_scan": "2026-04-22T09:30:50.607Z"
 }
