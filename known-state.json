@@ -11,7 +11,26 @@
       "influencer-bridge",
       "MGC-Company-Flyer",
       "MGC-Company-Flyer-final",
-      "mgc-dev-hub"
+      "mgc-dev-hub",
+      "mgc-embedding-service",
+      "mgc-accelerator-hub",
+      "mgc-docs-tool",
+      "lp-cost-validator",
+      "saiyo-lp-skill",
+      "mgc-translation-workflow",
+      "clone-any-site",
+      "mgc-saiyo-lp-bootstrap",
+      "mgc-ai-workspace",
+      "open-salvage",
+      "v0-akiya-ai-discovery-platform",
+      "obsidian-linkedin-autoposter",
+      "degreed-maestro-mirror",
+      "dtoc-scout",
+      "google-ai-search-guide",
+      "cloq-service-page",
+      "recursive-ui-skeleton-extractor",
+      "workbench-prototype",
+      "auto-icon-vectorizer"
     ],
     "matsuo": [
       "MGC-inc.",
@@ -27,7 +46,14 @@
       "sophia-ai",
       "speaksim",
       "Math-Quest",
-      "PR-AUTO"
+      "PR-AUTO",
+      "fortune-talk",
+      "yt-short-clipper-web",
+      "mgc-outreach-pro",
+      "mgc-taskflow",
+      "lovable-flow",
+      "sales-ai-oss",
+      "meeting-ai"
     ]
   },
   "nippo_sync_routes": [
@@ -47,11 +73,25 @@
     "/shop/[brand]/success",
     "/tools/pricing-affiliate",
     "/tools/komatsu-rag",
-    "/tools/isp-dashboard"
+    "/tools/isp-dashboard",
+    "/creators",
+    "/admin/lp",
+    "/lp/[slug]/admin",
+    "/lp/[slug]/claim",
+    "/sheets/connect/[slug]",
+    "/sheets/connect/[slug]/done",
+    "/privacy",
+    "/terms",
+    "/expenses"
   ],
   "seeded_at": "2026-03-28T00:00:00.000Z",
+  "updated_at": "2026-05-05T03:30:50.589Z",
   "vm_static_dirs": [
     "hikari",
-    "html"
+    "html",
+    "mgc-accelerator-hub",
+    "hikari.bak.20260406",
+    "onenote-images",
+    "maestro"
   ]
 }

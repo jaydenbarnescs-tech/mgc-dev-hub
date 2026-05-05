@@ -262,10 +262,10 @@
   <!-- â•â•â• PROJECTS VIEW â•â•â• -->
   <div id="view-projects" class="view active">
     <div class="stats">
-      <div class="stat"><div class="stat-label">ç·ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆæ•°</div><div class="stat-value">16</div><div class="stat-sub">across 2 developers</div></div>
-      <div class="stat"><div class="stat-label">ãƒ‡ãƒ—ãƒ­ã‚¤æ¸ˆã¿</div><div class="stat-value" style="color:var(--green)">11</div><div class="stat-sub">live URLs</div></div>
-      <div class="stat"><div class="stat-label">é–‹ç™ºä¸­</div><div class="stat-value" style="color:var(--amber)">3</div><div class="stat-sub">in progress</div></div>
-      <div class="stat"><div class="stat-label">æœ€æ–°è¿½åŠ </div><div class="stat-value" style="color:var(--purple);font-size:15px;padding-top:6px">mgc-research-agent</div><div class="stat-sub">Jayden Â· private</div></div>
+      <div class="stat"><div class="stat-label">ç·ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆæ•°</div><div class="stat-value" id="stat-total">16</div><div class="stat-sub">across 2 developers</div></div>
+      <div class="stat"><div class="stat-label">ãƒ‡ãƒ—ãƒ­ã‚¤æ¸ˆã¿</div><div class="stat-value" id="stat-live" style="color:var(--green)">11</div><div class="stat-sub">live URLs</div></div>
+      <div class="stat"><div class="stat-label">é–‹ç™ºä¸­ / å†…éƒ¨</div><div class="stat-value" id="stat-dev" style="color:var(--amber)">3</div><div class="stat-sub">in progress</div></div>
+      <div class="stat"><div class="stat-label">æœ€æ–°è¿½åŠ </div><div class="stat-value" id="stat-latest" style="color:var(--purple);font-size:15px;padding-top:6px">auto-icon-vectorizer</div><div class="stat-sub">Jayden Â· public</div></div>
     </div>
 
     <div class="filters">
@@ -622,6 +622,319 @@
 const PENDING_URL = 'https://raw.githubusercontent.com/jaydenbarnescs-tech/mgc-dev-hub/main/pending-changes.json';
 const DISMISS_KEY = 'devhub_dismissed_scan';
 
+const INTEGRATED_PROJECTS = [
+  {
+    owner: 'jayden', live: true, status: 'active', icon: 'ğŸ§­',
+    title: 'Nippo LP / Creator Operations',
+    repo: 'jaydenbarnescs-tech/nippo-sync',
+    note: 'new routes on nippo-sync.vercel.app',
+    description: 'ã‚¯ãƒªã‚¨ã‚¤ã‚¿ãƒ¼ä¸€è¦§ã€LPç®¡ç†ã€ã‚·ãƒ¼ãƒˆé€£æºã€çµŒè²»ã€æ³•å‹™ãƒšãƒ¼ã‚¸ã‚’å«ã‚€Nippo Syncã®è¿½åŠ é‹ç”¨ãƒ«ãƒ¼ãƒˆã€‚',
+    tags: [['Next.js', 'tag-next'], ['TypeScript', 'tag-ts'], ['Supabase', 'tag-supabase'], ['Vercel', 'tag-vercel']],
+    pages: [
+      ['/creators', 'ã‚¯ãƒªã‚¨ã‚¤ã‚¿ãƒ¼ä¸€è¦§', 'https://nippo-sync.vercel.app/creators'],
+      ['/admin/lp', 'LPç®¡ç†', 'https://nippo-sync.vercel.app/admin/lp'],
+      ['/lp/[slug]/admin', 'å€‹åˆ¥LPç®¡ç†', 'https://nippo-sync.vercel.app/lp/demo/admin'],
+      ['/lp/[slug]/claim', 'LPç”³è«‹ãƒ»claim', 'https://nippo-sync.vercel.app/lp/demo/claim'],
+      ['/sheets/connect/[slug]', 'Google Sheetsé€£æº', 'https://nippo-sync.vercel.app/sheets/connect/demo'],
+      ['/sheets/connect/[slug]/done', 'Sheetsé€£æºå®Œäº†', 'https://nippo-sync.vercel.app/sheets/connect/demo/done'],
+      ['/expenses', 'çµŒè²»ç®¡ç†', 'https://nippo-sync.vercel.app/expenses'],
+      ['/privacy', 'ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼', 'https://nippo-sync.vercel.app/privacy'],
+      ['/terms', 'åˆ©ç”¨è¦ç´„', 'https://nippo-sync.vercel.app/terms'],
+    ],
+    primaryUrl: 'https://nippo-sync.vercel.app/admin/lp',
+    footer: '9 new routes integrated',
+  },
+  {
+    owner: 'jayden', live: true, status: 'infra', icon: 'ğŸ–¥ï¸',
+    title: 'Oracle VM Static Directories',
+    repo: 'jaydenbarnescs-tech/oracle-server ğŸ”’',
+    note: 'served by mgc-pass-proxy.duckdns.org',
+    description: 'Oracle VMä¸Šã§å…¬é–‹ã•ã‚Œã¦ã„ã‚‹é™çš„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªç¾¤ã€‚æ–°è¦æ¤œå‡ºã•ã‚ŒãŸMaestroã€Acceleratorã€OneNoteç”»åƒã€ãƒ’ã‚«ãƒªãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ã‚’è¿½åŠ ã€‚',
+    tags: [['Oracle Cloud', 'tag-oracle'], ['Nginx', ''], ['Static', '']],
+    pages: [
+      ['/mgc-accelerator-hub/', 'MGC Accelerator Hub mirror', 'https://mgc-pass-proxy.duckdns.org/mgc-accelerator-hub/'],
+      ['/maestro/', 'Degreed Maestro proxy', 'https://mgc-pass-proxy.duckdns.org/maestro/'],
+      ['/onenote-images/', 'OneNote images', 'https://mgc-pass-proxy.duckdns.org/onenote-images/'],
+      ['/hikari.bak.20260406/', 'ãƒ’ã‚«ãƒª backup 2026-04-06', 'https://mgc-pass-proxy.duckdns.org/hikari.bak.20260406/'],
+    ],
+    primaryUrl: 'https://mgc-pass-proxy.duckdns.org/maestro/',
+    githubUrl: 'https://github.com/jaydenbarnescs-tech/oracle-server',
+    footer: 'mgc-pass-proxy.duckdns.org',
+  },
+  {
+    owner: 'jayden', live: false, status: 'infra', icon: 'ğŸ§ ',
+    title: 'MGC Embedding Service',
+    repo: 'jaydenbarnescs-tech/mgc-embedding-service ğŸ”’',
+    description: 'Ollama BGE-M3 / qwen3 embedding APIã€‚nippo-sync RAGã¨ã‚³ãƒãƒ„Voice AIå‘ã‘ã®å…±æœ‰Embeddingãƒã‚¤ã‚¯ãƒ­ã‚µãƒ¼ãƒ“ã‚¹ã€‚',
+    tags: [['Python', 'tag-python'], ['FastAPI', ''], ['Ollama', ''], ['Oracle Cloud', 'tag-oracle']],
+    disabledLabel: 'ğŸ”’ port 9300 Â· internal',
+    footer: 'port 9300 Â· internal only',
+  },
+  {
+    owner: 'jayden', live: true, status: 'active', icon: 'ğŸš€',
+    title: 'MGC Accelerator Hub',
+    repo: 'jaydenbarnescs-tech/mgc-accelerator-hub ğŸ”’',
+    description: 'MGC accelerator initiatives dashboardã€‚Vercelç‰ˆã¨Oracle VMãƒŸãƒ©ãƒ¼ã‚’è¿½è·¡ã€‚',
+    tags: [['Next.js', 'tag-next'], ['TypeScript', 'tag-ts'], ['Vercel', 'tag-vercel'], ['Oracle VM', 'tag-oracle']],
+    pages: [
+      ['Vercel', 'Production app', 'https://mgc-accelerator-hub.vercel.app'],
+      ['/mgc-accelerator-hub/', 'Oracle VM mirror', 'https://mgc-pass-proxy.duckdns.org/mgc-accelerator-hub/'],
+    ],
+    primaryUrl: 'https://mgc-accelerator-hub.vercel.app',
+    footer: 'mgc-accelerator-hub.vercel.app',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ§¾',
+    title: 'MGC Docs Tool',
+    repo: 'jaydenbarnescs-tech/mgc-docs-tool ğŸ”’',
+    description: 'è¦‹ç©æ›¸ãƒ»è«‹æ±‚æ›¸ã®è‡ªå‹•ç”Ÿæˆãƒ„ãƒ¼ãƒ«ã€‚Claudeå‘ã‘MCP toolsã¨Node.js docx generatorã€‚',
+    tags: [['JavaScript', 'tag-js'], ['DOCX', ''], ['MCP', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: true, status: 'active', icon: 'ğŸ’¹',
+    title: 'LP Cost Validator',
+    repo: 'jaydenbarnescs-tech/lp-cost-validator',
+    description: 'LPåˆ¶ä½œãƒ“ã‚¸ãƒã‚¹ã®ã‚³ã‚¹ãƒˆãƒ»åˆ©ç›Šæ¤œè¨¼ãƒ„ãƒ¼ãƒ«ã€‚åˆ¶ä½œå˜ä¾¡ã€é‹ç”¨ã‚³ã‚¹ãƒˆã€åˆ©ç›Šç‡ã‚’æ¤œè¨¼ã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Vercel', 'tag-vercel'], ['Finance', '']],
+    pages: [['lp-cost-validator.vercel.app', 'LP business cost validator', 'https://lp-cost-validator.vercel.app']],
+    primaryUrl: 'https://lp-cost-validator.vercel.app',
+    footer: 'lp-cost-validator.vercel.app',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ¨',
+    title: 'Saiyo LP Skill',
+    repo: 'jaydenbarnescs-tech/saiyo-lp-skill',
+    description: 'æ—¥æœ¬èªæ¡ç”¨LPã‚’æ§‹ç¯‰ã™ã‚‹Claude Code skillã€‚TAFé¢¨ãƒšã‚¤ãƒ³ãƒˆã‚¹ã‚¤ãƒ¼ãƒ—ã€AIç”»åƒã€è¤‡æ•°ã®ãƒã‚¦ã‚¹ãƒ¢ãƒ¼ãƒ‰ã«å¯¾å¿œã€‚',
+    tags: [['HTML', 'tag-js'], ['Skill', ''], ['æ¡ç”¨LP', '']],
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸŒ',
+    title: 'MGC Translation Workflow',
+    repo: 'jaydenbarnescs-tech/mgc-translation-workflow ğŸ”’',
+    description: 'EN/CNã‹ã‚‰æ—¥æœ¬èªã¸ã®ç¿»è¨³ãƒ¯ãƒ¼ã‚¯ãƒ•ãƒ­ãƒ¼ã€‚glossaryã€SKILL.mdã€ãƒ¬ãƒ“ãƒ¥ãƒ¼ãƒ‘ã‚¤ãƒ—ãƒ©ã‚¤ãƒ³ã‚’ç®¡ç†ã€‚',
+    tags: [['Python', 'tag-python'], ['Translation', ''], ['Workflow', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ§¬',
+    title: 'Clone Any Site',
+    repo: 'jaydenbarnescs-tech/clone-any-site',
+    description: 'ãƒ©ã‚¤ãƒ–ã‚µã‚¤ãƒˆã‚’å˜ä¸€HTMLæˆæœç‰©ã¨ã—ã¦å†ç¾ã™ã‚‹ãŸã‚ã®å®Ÿè·µãƒ—ãƒ¬ã‚¤ãƒ–ãƒƒã‚¯ã€‚AIæ”¯æ´ãƒ‘ã‚¹ã€æ‰‹å‹•ãƒ•ã‚©ãƒ¼ãƒ«ãƒãƒƒã‚¯ã€ç”»åƒåŸ‹ã‚è¾¼ã¿è£œåŠ©ã‚’å«ã‚€ã€‚',
+    tags: [['Python', 'tag-python'], ['Playbook', ''], ['HTML', 'tag-js']],
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ—ï¸',
+    title: 'MGC Saiyo LP Bootstrap',
+    repo: 'jaydenbarnescs-tech/mgc-saiyo-lp-bootstrap',
+    description: 'å‚ç…§URLã‹ã‚‰æ¡ç”¨LPä¸€å¼ã‚’é«˜é€Ÿã«ç«‹ã¡ä¸Šã’ã‚‹MGC skillã€‚ãƒ‡ã‚¶ã‚¤ãƒ³ãƒ»ã‚³ãƒ³ãƒ†ãƒ³ãƒ„æŠ½å‡ºã€AIè£œå®Œã€nippo-syncé€£æºã‚’å«ã‚€ã€‚',
+    tags: [['Python', 'tag-python'], ['æ¡ç”¨LP', ''], ['Automation', '']],
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ›Ÿ',
+    title: 'Open Salvage / MGC AI Workspace',
+    repo: 'jaydenbarnescs-tech/open-salvage',
+    note: 'mgc-ai-workspace now redirects here',
+    description: 'Claude Code CLIå‘ã‘ã®æœ¬ç•ªã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã€‚æ—§MGC AI Workspaceæ¤œå‡ºåˆ†ã‚’Open Salvageã¨ã—ã¦åæ˜ ã€‚',
+    tags: [['JavaScript', 'tag-js'], ['Agent Framework', ''], ['CLI', '']],
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸšï¸',
+    title: 'Akiya AI Discovery Platform',
+    repo: 'jaydenbarnescs-tech/v0-akiya-ai-discovery-platform ğŸ”’',
+    description: 'ç©ºãå®¶AIæ¢ç´¢ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã®v0å®Ÿè£…ã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['v0', ''], ['Private', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'âœï¸',
+    title: 'Obsidian LinkedIn Autoposter',
+    repo: 'jaydenbarnescs-tech/obsidian-linkedin-autoposter',
+    description: 'éŸ³å£°ãƒ¡ãƒ¢ã‚„Markdownã‚’LinkedInæŠ•ç¨¿ã¸æ•´å½¢ã—ã€ObsidiançµŒç”±ã§ã‚­ãƒ¥ãƒ¼ã‚¤ãƒ³ã‚°ãƒ»è‡ªå‹•æŠ•ç¨¿ã™ã‚‹ãƒ‘ã‚¤ãƒ—ãƒ©ã‚¤ãƒ³ã€‚',
+    tags: [['JavaScript', 'tag-js'], ['Obsidian', ''], ['LinkedIn', '']],
+  },
+  {
+    owner: 'jayden', live: true, status: 'active', icon: 'ğŸ“',
+    title: 'Degreed Maestro Mirror',
+    repo: 'jaydenbarnescs-tech/degreed-maestro-mirror',
+    description: 'Degreed Maestro CS widgetã®proxy server deployã€‚Oracle VMã®/maestro/ã§å…¬é–‹ã€‚',
+    tags: [['HTML', 'tag-js'], ['Oracle VM', 'tag-oracle'], ['Proxy', '']],
+    pages: [['/maestro/', 'Maestro proxy', 'https://mgc-pass-proxy.duckdns.org/maestro/']],
+    primaryUrl: 'https://mgc-pass-proxy.duckdns.org/maestro/',
+    footer: 'mgc-pass-proxy.duckdns.org/maestro/',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ›’',
+    title: 'D2C Scout',
+    repo: 'jaydenbarnescs-tech/dtoc-scout ğŸ”’',
+    description: 'æ—¥æœ¬å±•é–‹å‘ã‘D2Cãƒ–ãƒ©ãƒ³ãƒ‰ã‚¹ã‚«ã‚¦ãƒ†ã‚£ãƒ³ã‚°ãƒ‘ã‚¤ãƒ—ãƒ©ã‚¤ãƒ³ã€‚13æ®µéšãƒ•ã‚¡ãƒãƒ«ã€ãƒ–ãƒ©ãƒ³ãƒ‰JSONã€registryã€dashboardã‚’ç®¡ç†ã€‚',
+    tags: [['Python', 'tag-python'], ['D2C', ''], ['Pipeline', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ”',
+    title: 'Google AI Search Guide',
+    repo: 'jaydenbarnescs-tech/google-ai-search-guide ğŸ”’',
+    description: 'Google AI Search MCPã®ä½¿ã„æ–¹ã‚¬ã‚¤ãƒ‰ã€‚ãƒªã‚µãƒ¼ãƒä½œæ¥­ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆæ‰‹é †ã‚’æ–‡æ›¸åŒ–ã€‚',
+    tags: [['Docs', ''], ['MCP', ''], ['Research', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ¢',
+    title: 'Cloq Service Page',
+    repo: 'jaydenbarnescs-tech/cloq-service-page ğŸ”’',
+    description: 'Cloqå‘ã‘ã‚µãƒ¼ãƒ“ã‚¹ãƒšãƒ¼ã‚¸ã®é™çš„HTMLå®Ÿè£…ã€‚',
+    tags: [['HTML', 'tag-js'], ['Service Page', ''], ['Private', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: false, status: 'dev', icon: 'ğŸ§©',
+    title: 'Recursive UI Skeleton Extractor',
+    repo: 'jaydenbarnescs-tech/recursive-ui-skeleton-extractor ğŸ”’',
+    description: 'UIã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã‚·ãƒ§ãƒƒãƒˆã‹ã‚‰å†å¸°çš„ã«æ§‹é€ ã‚¹ã‚±ãƒ«ãƒˆãƒ³ã‚’æŠ½å‡ºã™ã‚‹Pythonãƒ„ãƒ¼ãƒ«ã€‚',
+    tags: [['Python', 'tag-python'], ['Computer Vision', ''], ['UI', '']],
+    disabledLabel: 'ğŸ”’ Private Â· No URL',
+  },
+  {
+    owner: 'jayden', live: true, status: 'active', icon: 'ğŸ§ª',
+    title: 'Workbench Prototype',
+    repo: 'jaydenbarnescs-tech/workbench-prototype ğŸ”’',
+    description: 'Workbench prototypeã€‚Vercelä¸Šã§å…¬é–‹ã•ã‚Œã¦ã„ã‚‹å®Ÿé¨“ç”¨ã‚¢ãƒ—ãƒªã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Vercel', 'tag-vercel'], ['Prototype', '']],
+    pages: [['workbench-prototype.vercel.app', 'Workbench prototype', 'https://workbench-prototype.vercel.app']],
+    primaryUrl: 'https://workbench-prototype.vercel.app',
+    footer: 'workbench-prototype.vercel.app',
+  },
+  {
+    owner: 'jayden', live: false, status: 'new', icon: 'ğŸ–¼ï¸',
+    title: 'Auto Icon Vectorizer',
+    repo: 'jaydenbarnescs-tech/auto-icon-vectorizer',
+    description: 'ã¼ã‚„ã‘ãŸAIç”ŸæˆUIã‚¢ã‚¤ã‚³ãƒ³ã‚’ã€èƒŒæ™¯é™¤å»ã¨Potrace tracingã§ã‚¯ãƒªãƒ¼ãƒ³ãªSVG/inline HTMLã¸å¾©å…ƒã€‚',
+    tags: [['Python', 'tag-python'], ['SVG', ''], ['Potrace', '']],
+  },
+  {
+    owner: 'matsuo', live: false, status: 'new', icon: 'ğŸ”®',
+    title: 'Fortune Talk',
+    repo: 'koko1056-inv/fortune-talk',
+    description: 'å ã„ãƒ»ä¼šè©±ä½“é¨“å‘ã‘ã®TypeScriptã‚¢ãƒ—ãƒªã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Conversation', '']],
+  },
+  {
+    owner: 'matsuo', live: true, status: 'active', icon: 'ğŸ¬',
+    title: 'YT Short Clipper Web',
+    repo: 'koko1056-inv/yt-short-clipper-web',
+    description: 'YouTube Shortså‘ã‘ã‚¯ãƒªãƒƒãƒ—ç”ŸæˆWebã‚¢ãƒ—ãƒªã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Vercel', 'tag-vercel'], ['Video', '']],
+    pages: [['yt-short-clipper-web.vercel.app', 'Short clipper app', 'https://yt-short-clipper-web.vercel.app']],
+    primaryUrl: 'https://yt-short-clipper-web.vercel.app',
+    footer: 'yt-short-clipper-web.vercel.app',
+  },
+  {
+    owner: 'matsuo', live: false, status: 'dev', icon: 'ğŸ“£',
+    title: 'MGC Outreach Pro',
+    repo: 'koko1056-inv/mgc-outreach-pro',
+    description: 'MGCå‘ã‘ã‚¢ã‚¦ãƒˆãƒªãƒ¼ãƒæ”¯æ´ãƒ„ãƒ¼ãƒ«ã€‚',
+    tags: [['Python', 'tag-python'], ['Outreach', '']],
+  },
+  {
+    owner: 'matsuo', live: false, status: 'dev', icon: 'âœ…',
+    title: 'MGC Taskflow',
+    repo: 'koko1056-inv/mgc-taskflow',
+    description: 'MGCæ¥­å‹™ã‚¿ã‚¹ã‚¯ãƒ•ãƒ­ãƒ¼ç®¡ç†ã‚¢ãƒ—ãƒªã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Workflow', '']],
+  },
+  {
+    owner: 'matsuo', live: false, status: 'dev', icon: 'ğŸª„',
+    title: 'Lovable Flow',
+    repo: 'koko1056-inv/lovable-flow',
+    description: 'Lovableé€£æºãƒ»ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ”ãƒ³ã‚°ç”¨ã®TypeScriptãƒ¯ãƒ¼ã‚¯ãƒ•ãƒ­ãƒ¼ã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Prototype', '']],
+  },
+  {
+    owner: 'matsuo', live: true, status: 'active', icon: 'ğŸ§²',
+    title: 'Sales AI OSS',
+    repo: 'koko1056-inv/sales-ai-oss',
+    description: 'AIãƒªãƒ¼ãƒ‰æ¢ç´¢ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã€‚æ—¥æœ¬èªå¯¾å¿œã®OSSå®Ÿè£…ã§ã€origami.chatã«ã‚¤ãƒ³ã‚¹ãƒ‘ã‚¤ã‚¢ã•ã‚ŒãŸå–¶æ¥­æ”¯æ´ã‚¢ãƒ—ãƒªã€‚',
+    tags: [['TypeScript', 'tag-ts'], ['Vercel', 'tag-vercel'], ['Sales AI', '']],
+    pages: [['sales-ai-oss.vercel.app', 'Sales AI OSS', 'https://sales-ai-oss.vercel.app']],
+    primaryUrl: 'https://sales-ai-oss.vercel.app',
+    footer: 'sales-ai-oss.vercel.app',
+  },
+  {
+    owner: 'matsuo', live: false, status: 'new', icon: 'ğŸ“',
+    title: 'Meeting AI',
+    repo: 'koko1056-inv/meeting-ai',
+    description: 'Meeting AI projectã€‚ä¼šè­°æ”¯æ´ãƒ»è­°äº‹éŒ²ç”¨é€”ã®æ–°è¦ãƒªãƒã‚¸ãƒˆãƒªã€‚',
+    tags: [['AI', ''], ['Meeting', '']],
+  },
+];
+
+function renderIntegratedProjects() {
+  const grids = {
+    jayden: document.querySelector('#sg-jayden .grid'),
+    matsuo: document.querySelector('#sg-matsuo .grid'),
+  };
+  INTEGRATED_PROJECTS.forEach(project => {
+    const grid = grids[project.owner];
+    if (grid) grid.insertAdjacentHTML('beforeend', renderProjectCard(project));
+  });
+  updateProjectStats();
+}
+
+function renderProjectCard(project) {
+  const badge = {
+    active: ['badge-active', 'Active'],
+    dev: ['badge-dev', 'In Dev'],
+    infra: ['badge-infra', 'Infra'],
+    new: ['badge-new', 'ğŸ†• New'],
+  }[project.status || 'dev'];
+  const iconStyle = project.gradient ? ` style="background:${escAttr(project.gradient)}"` : '';
+  const note = project.note ? `<div class="card-note">${escHtml(project.note)}</div>` : '';
+  const tags = (project.tags || []).map(([label, className]) =>
+    `<span class="tag${className ? ` ${className}` : ''}">${escHtml(label)}</span>`
+  ).join('');
+  const pages = project.pages?.length
+    ? `<div class="pages">${project.pages.map(([path, name, url]) =>
+        `<div class="page-row"><span class="page-path">${escHtml(path)}</span><span class="page-name">${escHtml(name)}</span><a class="page-link" href="${escAttr(url)}" target="_blank" rel="noopener">â†’ é–‹ã</a></div>`
+      ).join('')}</div>`
+    : '';
+  const githubUrl = project.githubUrl || `https://github.com/${project.repo.replace(' ğŸ”’', '')}`;
+  const primaryAction = project.primaryUrl
+    ? `<a class="btn btn-primary" href="${escAttr(project.primaryUrl)}" target="_blank" rel="noopener">ğŸ”— é–‹ã</a>`
+    : `<span class="btn btn-disabled">${escHtml(project.disabledLabel || 'ğŸ”— æœªãƒ‡ãƒ—ãƒ­ã‚¤')}</span>`;
+
+  return `
+        <div class="card" data-owner="${project.owner}" data-live="${project.live ? 'true' : 'false'}">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <div class="card-icon"${iconStyle}>${project.icon}</div>
+              <div>
+                <div class="card-title">${escHtml(project.title)}</div>
+                <div class="card-repo">${escHtml(project.repo)}</div>
+                ${note}
+              </div>
+            </div>
+            <span class="badge ${badge[0]}">${badge[1]}</span>
+          </div>
+          <div class="card-desc">${escHtml(project.description)}</div>
+          <div class="tags">${tags}</div>
+          ${pages}
+          <div class="card-footer">
+            <div class="updated">${escHtml(project.footer || (project.live ? 'live URL tracked' : 'GitHub repo tracked'))}</div>
+            <div class="actions">${primaryAction}<a class="btn btn-ghost" href="${escAttr(githubUrl)}" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>`;
+}
+
+function updateProjectStats() {
+  const cards = Array.from(document.querySelectorAll('#view-projects .card'));
+  const live = cards.filter(card => card.dataset.live === 'true').length;
+  document.getElementById('stat-total').textContent = cards.length;
+  document.getElementById('stat-live').textContent = live;
+  document.getElementById('stat-dev').textContent = cards.length - live;
+  document.getElementById('stat-latest').textContent = 'auto-icon-vectorizer';
+}
+
 async function checkPendingChanges() {
   try {
     const res = await fetch(PENDING_URL + '?t=' + Date.now());
@@ -652,6 +965,7 @@ function dismissBanner() {
   sessionStorage.setItem(DISMISS_KEY, banner.dataset.scan || '');
   banner.classList.remove('visible');
 }
+renderIntegratedProjects();
 checkPendingChanges();
 document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP');
 
@@ -700,12 +1014,40 @@ const REPOS = [
   { repo: 'jaydenbarnescs-tech/isp-approach-bot',            name: 'ãƒ’ã‚«ãƒª å›ç·šãƒœãƒƒãƒˆ',        icon: 'ğŸ“', owner: 'jayden' },
   { repo: 'jaydenbarnescs-tech/mgc-dev-hub',                 name: 'MGC Dev Hub',             icon: 'ğŸ› ï¸', owner: 'jayden' },
   { repo: 'jaydenbarnescs-tech/oracle-server',               name: 'Proxy Server',            icon: 'ğŸ–¥ï¸', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/mgc-research-agent',          name: 'MGC Research Agent',      icon: 'ğŸ”', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/mgc-embedding-service',       name: 'Embedding Service',       icon: 'ğŸ§ ', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/mgc-accelerator-hub',         name: 'Accelerator Hub',         icon: 'ğŸš€', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/mgc-docs-tool',               name: 'MGC Docs Tool',           icon: 'ğŸ§¾', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/lp-cost-validator',           name: 'LP Cost Validator',       icon: 'ğŸ’¹', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/saiyo-lp-skill',              name: 'Saiyo LP Skill',          icon: 'ğŸ¨', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/mgc-translation-workflow',    name: 'Translation Workflow',    icon: 'ğŸŒ', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/clone-any-site',              name: 'Clone Any Site',          icon: 'ğŸ§¬', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/mgc-saiyo-lp-bootstrap',      name: 'Saiyo LP Bootstrap',      icon: 'ğŸ—ï¸', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/open-salvage',                name: 'Open Salvage',            icon: 'ğŸ›Ÿ', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/v0-akiya-ai-discovery-platform', name: 'Akiya AI Discovery',    icon: 'ğŸšï¸', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/obsidian-linkedin-autoposter', name: 'LinkedIn Autoposter',    icon: 'âœï¸', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/degreed-maestro-mirror',      name: 'Degreed Maestro',         icon: 'ğŸ“', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/dtoc-scout',                  name: 'D2C Scout',               icon: 'ğŸ›’', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/google-ai-search-guide',      name: 'Google AI Search Guide',  icon: 'ğŸ”', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/cloq-service-page',           name: 'Cloq Service Page',       icon: 'ğŸ¢', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/recursive-ui-skeleton-extractor', name: 'UI Skeleton Extractor', icon: 'ğŸ§©', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/workbench-prototype',         name: 'Workbench Prototype',     icon: 'ğŸ§ª', owner: 'jayden' },
+  { repo: 'jaydenbarnescs-tech/auto-icon-vectorizer',        name: 'Auto Icon Vectorizer',    icon: 'ğŸ–¼ï¸', owner: 'jayden' },
   { repo: 'koko1056-inv/MGC-inc.',                           name: 'MGC Website',             icon: 'ğŸŒ', owner: 'matsuo' },
   { repo: 'koko1056-inv/musemaker-suite',                    name: 'Musemaker Suite',         icon: 'ğŸ¨', owner: 'matsuo' },
   { repo: 'koko1056-inv/nishio-kenki-widget',                name: 'Nishio Kenki Widget',     icon: 'ğŸ—ï¸', owner: 'matsuo' },
   { repo: 'koko1056-inv/kedepot-voiceagent-demo',            name: 'KE Depot Voice Agent',    icon: 'ğŸ¤', owner: 'matsuo' },
   { repo: 'koko1056-inv/influencer-ai',                      name: 'Influencer AI',           icon: 'ğŸ¤–', owner: 'matsuo' },
   { repo: 'koko1056-inv/collectify',                         name: 'Collectify',              icon: 'ğŸ“¦', owner: 'matsuo' },
+  { repo: 'koko1056-inv/voice-ai-demo',                      name: 'Voice AI Demo',           icon: 'ğŸ”Š', owner: 'matsuo' },
+  { repo: 'koko1056-inv/agent-identity-protocol',            name: 'Agent Identity Protocol', icon: 'ğŸªª', owner: 'matsuo' },
+  { repo: 'koko1056-inv/fortune-talk',                       name: 'Fortune Talk',            icon: 'ğŸ”®', owner: 'matsuo' },
+  { repo: 'koko1056-inv/yt-short-clipper-web',               name: 'YT Short Clipper',        icon: 'ğŸ¬', owner: 'matsuo' },
+  { repo: 'koko1056-inv/mgc-outreach-pro',                   name: 'MGC Outreach Pro',        icon: 'ğŸ“£', owner: 'matsuo' },
+  { repo: 'koko1056-inv/mgc-taskflow',                       name: 'MGC Taskflow',            icon: 'âœ…', owner: 'matsuo' },
+  { repo: 'koko1056-inv/lovable-flow',                       name: 'Lovable Flow',            icon: 'ğŸª„', owner: 'matsuo' },
+  { repo: 'koko1056-inv/sales-ai-oss',                       name: 'Sales AI OSS',            icon: 'ğŸ§²', owner: 'matsuo' },
+  { repo: 'koko1056-inv/meeting-ai',                         name: 'Meeting AI',              icon: 'ğŸ“', owner: 'matsuo' },
 ];
 
 let logFilter = 'all';
@@ -772,7 +1114,7 @@ async function fetchLog(force = false) {
     });
   });
 
-  setLogStatus(`å®ŒÄº† â€” ${Object.keys(logData).length}æ—¥åˆ†ã®ã‚³ãƒŸãƒƒãƒˆã‚’å–å¾—`, false);
+  setLogStatus(`å®Œäº† â€” ${Object.keys(logData).length}æ—¥åˆ†ã®ã‚³ãƒŸãƒƒãƒˆã‚’å–å¾—`, false);
   document.getElementById('log-refresh-btn').classList.remove('loading');
   window._logLoaded = true;
   renderLog();
@@ -966,8 +1308,13 @@ async function regenerateProjSummary(date, repo, projSummaryKey) {
 }
 
 function buildDaySummaryPrompt(date, projects) {
-  const dateStr = new Date(date + 'T12:00:00').toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
-  let text = `ã‚ãªãŸã¯MGC Inc.ã®é–‹ç™ºãƒãƒ¼ãƒ ã‚¢ã‚·ã‚¹ã‚¿ãƒ³ãƒˆã§ã™ã€‚\n\n${dateStr}ã®é–‹ç™ºé€²æ—ã‚’æ—¥æœ¬èªã§è¦ç´„ã—ã¦ãã ã•ã‚ã€‚\n\nä»¥ä¸‹ã®ãƒ«ãƒ¼ãƒ«ã«å¾“ã£ã¦ãã ã•ãˆï¼š\n- ç®‡æ¡æ›¸ãã¯ä½¿ã‚ãšã€æµã‚‹ã‚ˆã†ãªæ–‡ç« ã§æ›¸ã\n- ä½•ã‚’ä½œæ¥­ã—ãŸã‹ã ã‘ã§ãªãã€ã€Œãªãœãã‚Œã‚’ã‚„ã£ãŸã‹ã€ã€Œä½•ãŒé”æˆã•ã‚ŒãŸã‹ã€ã‚’å¿…ãšå«ã‚ã‚‹\n- ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’ã¾ãŸã„ã§å…¨ä½“ã®é€²æ—ã¨ã—ã¦æ‰ãˆã‚‹\n- 5ã€œ8æ–‡ç¨‹åº¦ã§ç°¡æ½”ã«ã¾ã¨ã‚ã‚‹\n- ã€Œæœ¬æ—¥ã¯...ã€ã§å§‹ã‚ã‚‹\n\nã‚³ãƒŸãƒƒãƒˆæƒ…å ±ï¼š\n\n`;
+  const dateStr = new Date(date + 'T12:00:00').toLocaleDateString('ja-JP', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    weekday: 'long',
+  });
+  let text = `ã‚ãªãŸã¯MGC Inc.ã®é–‹ç™ºãƒãƒ¼ãƒ ã‚¢ã‚·ã‚¹ã‚¿ãƒ³ãƒˆã§ã™ã€‚\n\n${dateStr}ã®é–‹ç™ºé€²æ—ã‚’æ—¥æœ¬èªã§è¦ç´„ã—ã¦ãã ã•ã„ã€‚\n\nä»¥ä¸‹ã®ãƒ«ãƒ¼ãƒ«ã«å¾“ã£ã¦ãã ã•ã„ï¼š\n- ç®‡æ¡æ›¸ãã¯ä½¿ã‚ãšã€æµã‚Œã‚‹ã‚ˆã†ãªæ–‡ç« ã§æ›¸ã\n- ä½•ã‚’ä½œæ¥­ã—ãŸã‹ã ã‘ã§ãªãã€ã€Œãªãœãã‚Œã‚’ã‚„ã£ãŸã‹ã€ã€Œä½•ãŒé”æˆã•ã‚ŒãŸã‹ã€ã‚’å¿…ãšå«ã‚ã‚‹\n- ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’ã¾ãŸã„ã§å…¨ä½“ã®é€²æ—ã¨ã—ã¦æ‰ãˆã‚‹\n- 5ã€œ8æ–‡ç¨‹åº¦ã§ç°¡æ½”ã«ã¾ã¨ã‚ã‚‹\n- ã€Œæœ¬æ—¥ã¯...ã€ã§å§‹ã‚ã‚‹\n\nã‚³ãƒŸãƒƒãƒˆæƒ…å ±ï¼š\n\n`;
 
   projects.forEach(p => {
     text += `â–  ${p.name} (${p.repo})\n`;
@@ -978,26 +1325,63 @@ function buildDaySummaryPrompt(date, projects) {
 }
 
 function buildProjSummaryPrompt(date, proj) {
-  const dateStr = new Date(date + 'T12:00:00').toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
-  let text = `ã‚ãªãŸã¯MGC Inc.ã®é–‹ç™ºãƒãƒ¼ãƒ ã‚¢ã‚·ã‚¹ã‚¿ãƒ³ãƒˆã§ã™ã€‚\n\n${dateStr}ç»0‘íÁÉ½¨¹¹…µ•÷4 ‘íÁÉ½¨¹É•Á½ô¤ƒ»¦Z/fë¦Ëš6_
-Kš^—šr³¢ª{Ÿ¢šÒ_›?ƒW	q¹q»’î—’â/»¯ó¯¯–úO›?ƒW¾òiq¸´ƒºšv‡šnã7¿’öÿ
-?kšZ®ƒŸšnã=q¸´ƒ’öW
-K
-/ƒGŸ«?3’öW3¦7¢š/ïkw
-3¦7¢š/7
-K–şk–B¯
-
--q¸´€Ïp×šZ¢/–ê›ŸÂ‡šöS¯û£
-
--q¹q»
-Ï#’â¢šŸ¾òiq¹€ì(€ÁÉ½¨¹½µµ¥ÑÌ¹™½É… ¡Œ€ôøìÑ•áĞ€¬ô€´€‘íŒ¹µ•ÍÍ…•õq¹€ìô¤ì(€É•ÑÕÉ¸Ñ•áĞì)ô()…Íå¹Œ™Õ¹Ñ¥½¸…±±±…Õ‘••¹•É…Ñ”¡ÁÉ½µÁĞ¤ì(€ÑÉäì(€€€½¹ÍĞÉ•Ì€ô…İ…¥Ğ™•Ñ ¡€‘íAI=aeô½±…Õ‘”µ•¹•É…Ñ•€°ì(€€€€€µ•Ñ¡½è€A=MPœ°(€€€€€¡•…‘•ÉÌèì€½¹Ñ•¹ĞµQåÁ”œè€…ÁÁ±¥…Ñ¥½¸½©Í½¸œô°(€€€€€‰½‘äè)M=8¹ÍÑÉ¥¹¥™ä¡ìÁÉ½µÁĞ°µ½‘•°è€¡…¥­Ôœô¤(€€€ô¤ì(€€€¥˜€ …É•Ì¹½¬¤Ñ¡É½Ü¹•ÜÉÉ½È A$•ÉÉ½È€œ€¬É•Ì¹ÍÑ…ÑÕÌ¤ì(€€€½¹ÍĞ‘…Ñ„€ô…İ…¥ĞÉ•Ì¹©Í½¸ ¤ì(€€€¥˜€¡‘…Ñ„¹É•ÍÁ½¹Í”¤É•ÑÕÉ¸‘…Ñ„¹É•ÍÁ½¹Í”¹ÑÉ¥´ ¤ì(€€€¥˜€¡‘…Ñ„¹½¹Ñ•¹Ğ€˜˜ÉÉ…ä¹¥ÍÉÉ…ä¡‘…Ñ„¹½¹Ñ•¹Ğ¤¤É•ÑÕÉ¸‘…Ñ„¹½¹Ñ•¹Ğ¹™¥±Ñ•È¡ˆ€ôøˆ¹ÑåÁ”€ôôô€Ñ•áĞœ¤¹µ…À¡ˆ€ôøˆ¹Ñ•áĞ¤¹©½¥¸ œœ¤¹ÑÉ¥´ ¤ì(€€€¥˜€¡‘…Ñ„¹Ñ•áĞ¤É•ÑÕÉ¸‘…Ñ„¹Ñ•áĞ¹ÑÉ¥´ ¤ì(€€€É•ÑÕÉ¸€ŸŠjƒ¾â<ƒ’â7šb;«¯
-çwÏ
-ç–ö‹–ò<œì(€ô…Ñ ¡”¤ì(€€€É•ÑÕÉ¸ƒŠjƒ¾â<ƒ¢šÒRš"C¯–’ÇšV__û_|è€‘í”¹µ•ÍÍ…•õ€ì(€ô)ô()™Õ¹Ñ¥½¸É•É•¹‘•É…ä¡‘…Ñ”¤ì(€½¹ÍĞ•°€ô‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% ‘…ä´œ€¬‘…Ñ”¤ì(€¥˜€ …•°¤É•ÑÕÉ¸ì(€½¹ÍĞİ…Í=Á•¸€ô•°¹±…ÍÍ1¥ÍĞ¹½¹Ñ…¥¹Ì ½Á•¸œ¤ì(€½¹ÍĞ½Á•¹AÉ½©Ì€ô¹•ÜM•Ğ ¤ì(€•°¹ÅÕ•ÉåM•±•Ñ½É±° œ¹‘…äµÁÉ½©•Ğ¹ÁÉ½¨µ½Á•¸œ¤¹™½É… ¡À€ôø½Á•¹AÉ½©Ì¹…‘¡À¹¥¤¤ì(€•°¹½ÕÑ•É!Q50€ôÉ•¹‘•É…å	±½¬¡‘…Ñ”¤ì(€½¹ÍĞ¹•İ°€ô‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% ‘…ä´œ€¬‘…Ñ”¤ì(€¥˜€¡¹•İ°¤ì(€€€¥˜€¡İ…Í=Á•¸¤¹•İ°¹±…ÍÍ1¥ÍĞ¹…‘ ½Á•¸œ¤ì•±Í”¹•İ°¹±…ÍÍ1¥ÍĞ¹É•µ½Ù” ½Á•¸œ¤ì(€€€½Á•¹AÉ½©Ì¹™½É… ¡¥€ôøì(€€€€€½¹ÍĞÀ€ô‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å%¡¥¤ì(€€€€€¥˜€¡À¤À¹±…ÍÍ1¥ÍĞ¹…‘ ÁÉ½¨µ½Á•¸œ¤ì(€€€ô¤ì(€ô)ô()™Õ¹Ñ¥½¸Í…Ù•MÕµµ…Éå…¡” ¤ì(€ÑÉäì±½…±MÑ½É…”¹Í•Ñ%Ñ•´¡MU55Ie}!}-d°)5M=8¹ÍÑÉ¥¹¥™ä¡ÍÕµµ…Éå…¡”¤¤ìô…Ñ ¡”¤íô)ô()™Õ¹Ñ¥½¸•Í!Ñµ°¡Ì¤ì(€É•ÑÕÉ¸MÑÉ¥¹œ¡Ì¤¹É•Á±…” ¼˜½œ°œ™…µÀìœ¤¹É•Á±…” ¼ğ½œ°œ™±Ğìœ¤¹É•Á±…” ¼ø½œ°œ™Ğìœ¤¹É•Á±…” ¼ˆ½œ°œ™ÅÕ½Ğìœ¤ì)ô((ğ½ÍÉ¥ÁĞø(ğ½‰½‘äø(ğ½¡Ñµ°ø( return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const dateStr = new Date(date + 'T12:00:00').toLocaleDateString('ja-JP', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  let text = `ã‚ãªãŸã¯MGC Inc.ã®é–‹ç™ºãƒãƒ¼ãƒ ã‚¢ã‚·ã‚¹ã‚¿ãƒ³ãƒˆã§ã™ã€‚\n\n${dateStr}ã®ã€Œ${proj.name}ã€ã®é–‹ç™ºé€²æ—ã‚’æ—¥æœ¬èªã§è¦ç´„ã—ã¦ãã ã•ã„ã€‚\n\nä»¥ä¸‹ã®ãƒ«ãƒ¼ãƒ«ã«å¾“ã£ã¦ãã ã•ã„ï¼š\n- ç®‡æ¡æ›¸ãã¯ä½¿ã‚ãšã€è‡ªç„¶ãªæ–‡ç« ã§æ›¸ã\n- ä½•ã‚’ä½œæ¥­ã—ãŸã‹ã ã‘ã§ãªãã€ç›®çš„ã¨é”æˆå†…å®¹ã‚’å«ã‚ã‚‹\n- 3ã€œ5æ–‡ç¨‹åº¦ã§ç°¡æ½”ã«ã¾ã¨ã‚ã‚‹\n\nã‚³ãƒŸãƒƒãƒˆæƒ…å ±ï¼š\n`;
+
+  proj.commits.forEach(c => { text += `- ${c.message}\n`; });
+  return text;
 }
 
-// Auto-load log when tab is opened
-// (called from switchTab)
+async function callClaudeGenerate(prompt) {
+  try {
+    const res = await fetch(`${PROXY}/claude-generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt }),
+    });
+    if (!res.ok) throw new Error(`API error ${res.status}`);
+    const data = await res.json();
+    if (typeof data === 'string') return data;
+    if (data?.content?.[0]?.text) return data.content[0].text;
+    if (data?.text) return data.text;
+    return JSON.stringify(data);
+  } catch (e) {
+    return 'è¦ç´„ç”Ÿæˆã«å¤±æ•—ã—ã¾ã—ãŸã€‚æ™‚é–“ã‚’ãŠã„ã¦å†åº¦ãŠè©¦ã—ãã ã•ã„ã€‚';
+  }
+}
 
+function rerenderDay(date) {
+  const oldEl = document.getElementById('day-' + date);
+  if (!oldEl) return;
+  const wasOpen = oldEl.classList.contains('open');
+  const newHtml = renderDayBlock(date);
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = newHtml.trim();
+  const newEl = wrapper.firstElementChild;
+  if (!wasOpen) newEl.classList.remove('open');
+  oldEl.replaceWith(newEl);
+}
+
+function saveSummaryCache() {
+  try { localStorage.setItem(SUMMARY_CACHE_KEY, JSON.stringify(summaryCache)); } catch (e) {}
+}
+
+function escHtml(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function escAttr(s) {
+  return escHtml(s);
+}
 </script>
 </body>
 </html>
