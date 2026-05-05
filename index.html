@@ -112,10 +112,14 @@
   .page-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 12px; border-bottom: 1px solid var(--border); background: #0c0f17; transition: background .1s; }
   .page-row:last-child { border-bottom: none; }
   .page-row:hover { background: #111827; }
+  .page-row.down { background: #120c0c; }
+  .page-row.down:hover { background: #1a1010; }
+  .page-row.down .page-path { color: #f87171; }
   .page-path { font-family: 'DM Mono',monospace; font-size: 11px; color: var(--blue); }
   .page-name { font-size: 11px; color: var(--text-sub); flex: 1; padding: 0 8px; }
   .page-link { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 600; padding: 2px 8px; border: 1px solid #1e1b4b; border-radius: 4px; background: #1e1b4b; white-space: nowrap; }
   .page-link:hover { background: #2d2a6e; }
+  .page-status { font-size: 10px; color: #f87171; border: 1px solid #4a1f1f; border-radius: 4px; background: #1f0a0a; padding: 2px 8px; white-space: nowrap; }
 
   /* ── CHANGE BANNER ── */
   #change-banner { display: none; background: #0c0f17; border-bottom: 1px solid #1f2937; padding: 10px 28px; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -493,7 +497,7 @@
             </div>
             <span class="badge badge-dev">URL Down</span>
           </div>
-          <div class="card-desc">西尾レントオール向けElevenLabs AIウィジェット。公開URLは現在500応答のため一時的に非表示。</div>
+          <div class="card-desc">西尾レントオール向けElevenLabs AIウィジェット。Vercel関数が本家サイトを都度fetchする構成で、Vercel上のserver-side fetchが失敗して500応答。</div>
           <div class="tags"><span class="tag tag-js">JavaScript</span><span class="tag tag-eleven">ElevenLabs</span><span class="tag tag-vercel">Vercel</span></div>
           <div class="card-footer">
             <div class="updated">Live URL down: <span>HTTP 500</span></div>
@@ -637,6 +641,12 @@ const INTEGRATED_PROJECTS = [
       ['/privacy', 'プライバシーポリシー', 'https://nippo-sync.vercel.app/privacy'],
       ['/terms', '利用規約', 'https://nippo-sync.vercel.app/terms'],
     ],
+    downPages: [
+      ['/admin/lp', 'Removed from repo on 2026-04-08; replaced by per-LP admin at /lp/[slug]/admin'],
+      ['/lp/[slug]/claim', 'Removed on 2026-04-09; replaced by /lp/[slug]/admin?first handover flow'],
+      ['/sheets/connect/[slug]', 'Removed on 2026-04-08; current flow starts at /api/sheets/connect/[slug]/authorize'],
+      ['/sheets/connect/[slug]/done', 'Removed on 2026-04-08; OAuth callback now returns to /lp/[slug]/admin'],
+    ],
     primaryUrl: 'https://nippo-sync.vercel.app/creators',
     footer: '5 live routes integrated',
   },
@@ -649,6 +659,11 @@ const INTEGRATED_PROJECTS = [
     tags: [['Oracle Cloud', 'tag-oracle'], ['Nginx', ''], ['Static', '']],
     pages: [
       ['/maestro/degreed.ai/ja/meet-maestro/', 'Degreed Maestro proxy', 'https://mgc-pass-proxy.duckdns.org/maestro/degreed.ai/ja/meet-maestro/'],
+    ],
+    downPages: [
+      ['/mgc-accelerator-hub/', 'Directory exists on VM, but mgc-pass-proxy has no location; use mgc-accelerator-hub.duckdns.org or Vercel'],
+      ['/onenote-images/', 'Served only by nginx on internal port 8099; not exposed through mgc-pass-proxy'],
+      ['/hikari.bak.20260406/', 'Backup directory exists on VM, but no nginx location exposes it through mgc-pass-proxy'],
     ],
     primaryUrl: 'https://mgc-pass-proxy.duckdns.org/maestro/degreed.ai/ja/meet-maestro/',
     githubUrl: 'https://github.com/jaydenbarnescs-tech/oracle-server',
@@ -890,6 +905,11 @@ function renderProjectCard(project) {
         `<div class="page-row"><span class="page-path">${escHtml(path)}</span><span class="page-name">${escHtml(name)}</span><a class="page-link" href="${escAttr(url)}" target="_blank" rel="noopener">→ 開く</a></div>`
       ).join('')}</div>`
     : '';
+  const downPages = project.downPages?.length
+    ? `<div class="pages">${project.downPages.map(([path, reason]) =>
+        `<div class="page-row down"><span class="page-path">${escHtml(path)}</span><span class="page-name">${escHtml(reason)}</span><span class="page-status">down</span></div>`
+      ).join('')}</div>`
+    : '';
   const githubUrl = project.githubUrl || `https://github.com/${project.repo.replace(' 🔒', '')}`;
   const primaryAction = project.primaryUrl
     ? `<a class="btn btn-primary" href="${escAttr(project.primaryUrl)}" target="_blank" rel="noopener">🔗 開く</a>`
@@ -911,6 +931,7 @@ function renderProjectCard(project) {
           <div class="card-desc">${escHtml(project.description)}</div>
           <div class="tags">${tags}</div>
           ${pages}
+          ${downPages}
           <div class="card-footer">
             <div class="updated">${escHtml(project.footer || (project.live ? 'live URL tracked' : 'GitHub repo tracked'))}</div>
             <div class="actions">${primaryAction}<a class="btn btn-ghost" href="${escAttr(githubUrl)}" target="_blank" rel="noopener">GitHub</a></div>
