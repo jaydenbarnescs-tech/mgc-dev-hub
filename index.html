@@ -485,19 +485,19 @@
           </div>
         </div>
 
-        <div class="card" data-owner="matsuo" data-live="true">
+        <div class="card" data-owner="matsuo" data-live="false">
           <div class="card-top">
             <div class="card-icon-wrap">
               <div class="card-icon" style="background:linear-gradient(135deg,#d97706,#b45309)">🏗️</div>
               <div><div class="card-title">Nishio Kenki Widget</div><div class="card-repo">koko1056-inv/nishio-kenki-widget</div></div>
             </div>
-            <span class="badge badge-active">Active</span>
+            <span class="badge badge-dev">URL Down</span>
           </div>
-          <div class="card-desc">西尾レントオール向けElevenLabs AIウィジェット。</div>
+          <div class="card-desc">西尾レントオール向けElevenLabs AIウィジェット。公開URLは現在500応答のため一時的に非表示。</div>
           <div class="tags"><span class="tag tag-js">JavaScript</span><span class="tag tag-eleven">ElevenLabs</span><span class="tag tag-vercel">Vercel</span></div>
           <div class="card-footer">
-            <div class="updated">GitHub: <span>2026-03-15</span></div>
-            <div class="actions"><a class="btn btn-primary" href="https://nishio-kenki-widget.vercel.app" target="_blank">🔗 開く</a><a class="btn btn-ghost" href="https://github.com/koko1056-inv/nishio-kenki-widget" target="_blank">GitHub</a></div>
+            <div class="updated">Live URL down: <span>HTTP 500</span></div>
+            <div class="actions"><span class="btn btn-disabled">🔗 URL down</span><a class="btn btn-ghost" href="https://github.com/koko1056-inv/nishio-kenki-widget" target="_blank">GitHub</a></div>
           </div>
         </div>
 
@@ -628,34 +628,27 @@ const INTEGRATED_PROJECTS = [
     title: 'Nippo LP / Creator Operations',
     repo: 'jaydenbarnescs-tech/nippo-sync',
     note: 'new routes on nippo-sync.vercel.app',
-    description: 'クリエイター一覧、LP管理、シート連携、経費、法務ページを含むNippo Syncの追加運用ルート。',
+    description: 'クリエイター一覧、LP管理、経費、法務ページを含むNippo Syncの追加運用ルート。404になるサンプルslugリンクは非表示。',
     tags: [['Next.js', 'tag-next'], ['TypeScript', 'tag-ts'], ['Supabase', 'tag-supabase'], ['Vercel', 'tag-vercel']],
     pages: [
       ['/creators', 'クリエイター一覧', 'https://nippo-sync.vercel.app/creators'],
-      ['/admin/lp', 'LP管理', 'https://nippo-sync.vercel.app/admin/lp'],
       ['/lp/[slug]/admin', '個別LP管理', 'https://nippo-sync.vercel.app/lp/demo/admin'],
-      ['/lp/[slug]/claim', 'LP申請・claim', 'https://nippo-sync.vercel.app/lp/demo/claim'],
-      ['/sheets/connect/[slug]', 'Google Sheets連携', 'https://nippo-sync.vercel.app/sheets/connect/demo'],
-      ['/sheets/connect/[slug]/done', 'Sheets連携完了', 'https://nippo-sync.vercel.app/sheets/connect/demo/done'],
       ['/expenses', '経費管理', 'https://nippo-sync.vercel.app/expenses'],
       ['/privacy', 'プライバシーポリシー', 'https://nippo-sync.vercel.app/privacy'],
       ['/terms', '利用規約', 'https://nippo-sync.vercel.app/terms'],
     ],
-    primaryUrl: 'https://nippo-sync.vercel.app/admin/lp',
-    footer: '9 new routes integrated',
+    primaryUrl: 'https://nippo-sync.vercel.app/creators',
+    footer: '5 live routes integrated',
   },
   {
     owner: 'jayden', live: true, status: 'infra', icon: '🖥️',
     title: 'Oracle VM Static Directories',
     repo: 'jaydenbarnescs-tech/oracle-server 🔒',
     note: 'served by mgc-pass-proxy.duckdns.org',
-    description: 'Oracle VM上で公開されている静的ディレクトリ群。新規検出されたMaestro、Accelerator、OneNote画像、ヒカリバックアップを追加。',
+    description: 'Oracle VM上で公開されている静的ディレクトリ群。404になる未公開ディレクトリはリンクから除外。',
     tags: [['Oracle Cloud', 'tag-oracle'], ['Nginx', ''], ['Static', '']],
     pages: [
-      ['/mgc-accelerator-hub/', 'MGC Accelerator Hub mirror', 'https://mgc-pass-proxy.duckdns.org/mgc-accelerator-hub/'],
       ['/maestro/degreed.ai/ja/meet-maestro/', 'Degreed Maestro proxy', 'https://mgc-pass-proxy.duckdns.org/maestro/degreed.ai/ja/meet-maestro/'],
-      ['/onenote-images/', 'OneNote images', 'https://mgc-pass-proxy.duckdns.org/onenote-images/'],
-      ['/hikari.bak.20260406/', 'ヒカリ backup 2026-04-06', 'https://mgc-pass-proxy.duckdns.org/hikari.bak.20260406/'],
     ],
     primaryUrl: 'https://mgc-pass-proxy.duckdns.org/maestro/degreed.ai/ja/meet-maestro/',
     githubUrl: 'https://github.com/jaydenbarnescs-tech/oracle-server',
@@ -674,11 +667,10 @@ const INTEGRATED_PROJECTS = [
     owner: 'jayden', live: true, status: 'active', icon: '🚀',
     title: 'MGC Accelerator Hub',
     repo: 'jaydenbarnescs-tech/mgc-accelerator-hub 🔒',
-    description: 'MGC accelerator initiatives dashboard。Vercel版とOracle VMミラーを追跡。',
+    description: 'MGC accelerator initiatives dashboard。現在はVercel版を公開URLとして追跡。',
     tags: [['Next.js', 'tag-next'], ['TypeScript', 'tag-ts'], ['Vercel', 'tag-vercel'], ['Oracle VM', 'tag-oracle']],
     pages: [
       ['Vercel', 'Production app', 'https://mgc-accelerator-hub.vercel.app'],
-      ['/mgc-accelerator-hub/', 'Oracle VM mirror', 'https://mgc-pass-proxy.duckdns.org/mgc-accelerator-hub/'],
     ],
     primaryUrl: 'https://mgc-accelerator-hub.vercel.app',
     footer: 'mgc-accelerator-hub.vercel.app',
