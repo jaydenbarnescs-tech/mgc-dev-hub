@@ -17,7 +17,16 @@
       "description": "Standalone Matsuo/Koko 日報シンクロくん app",
       "url": "https://nippo-sync-matsuo.vercel.app",
       "detected_at": "2026-05-11T02:00:50.716Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "inbound-lead-search",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-05-11T03:30:50.900Z"
     }
   ],
-  "last_scan": "2026-05-11T03:00:50.608Z"
+  "last_scan": "2026-05-11T03:30:50.900Z"
 }
