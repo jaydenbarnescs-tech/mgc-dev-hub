@@ -53,7 +53,16 @@
       "description": "Static image assets for superfeedy.japan Instagram account",
       "url": "",
       "detected_at": "2026-05-14T06:00:50.537Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "storybloq-task-triage-agent",
+      "description": "Prompt pack for a Storybloq task triage agent",
+      "url": "",
+      "detected_at": "2026-05-15T10:30:08.931Z"
     }
   ],
-  "last_scan": "2026-05-15T10:00:08.814Z"
+  "last_scan": "2026-05-15T10:30:08.931Z"
 }
