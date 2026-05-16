@@ -80,7 +80,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-05-15T14:00:09.485Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "sophia-voice-ai",
+      "description": "",
+      "url": "https://sophia-voice-ai.vercel.app",
+      "detected_at": "2026-05-16T07:00:08.637Z"
     }
   ],
-  "last_scan": "2026-05-16T06:30:08.698Z"
+  "last_scan": "2026-05-16T07:00:08.637Z"
 }
