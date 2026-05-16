@@ -98,7 +98,16 @@
       "description": "Standalone MCP server for Hamano Hotels public booking availability lookups and heatmaps",
       "url": "",
       "detected_at": "2026-05-16T09:30:08.712Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "lalamove-web-mcp",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-05-16T16:30:08.730Z"
     }
   ],
-  "last_scan": "2026-05-16T16:00:08.804Z"
+  "last_scan": "2026-05-16T16:30:08.730Z"
 }
