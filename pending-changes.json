@@ -116,7 +116,16 @@
       "description": "Shared agent infrastructure — tools, skills, configs, and shared platform for Jayden's AI agent ecosystem",
       "url": "",
       "detected_at": "2026-05-19T01:30:08.604Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-userscript-bridge",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-05-22T03:30:08.669Z"
     }
   ],
-  "last_scan": "2026-05-22T03:00:08.788Z"
+  "last_scan": "2026-05-22T03:30:08.669Z"
 }
