@@ -152,7 +152,16 @@
       "description": "",
       "url": "https://mgc-keihi-seisan.vercel.app",
       "detected_at": "2026-05-25T08:00:08.928Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "nippo-agent-workflow",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-05-26T03:30:08.753Z"
     }
   ],
-  "last_scan": "2026-05-26T03:00:08.783Z"
+  "last_scan": "2026-05-26T03:30:08.753Z"
 }
