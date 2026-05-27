@@ -170,7 +170,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-05-26T05:00:08.697Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "linky-pricing-dashboard",
+      "description": "",
+      "url": "https://files-mentioned-by-the-user-linky.vercel.app",
+      "detected_at": "2026-05-27T08:30:08.958Z"
     }
   ],
-  "last_scan": "2026-05-27T08:00:08.994Z"
+  "last_scan": "2026-05-27T08:30:08.958Z"
 }
