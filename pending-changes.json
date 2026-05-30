@@ -224,7 +224,16 @@
       "description": "Sophia LINE automation — Notion RAG + AI reply",
       "url": "https://customer-rag-notion-mcp.vercel.app",
       "detected_at": "2026-05-29T05:30:08.845Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "mgc-shinchoku-kanri",
+      "description": "MGC タスク進捗管理 dashboard (React + Vite + Supabase)",
+      "url": "https://mgc-shinchoku-kanri.vercel.app",
+      "detected_at": "2026-05-30T02:00:04.795Z"
     }
   ],
-  "last_scan": "2026-05-30T01:30:04.680Z"
+  "last_scan": "2026-05-30T02:00:04.795Z"
 }
