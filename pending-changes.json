@@ -233,7 +233,16 @@
       "description": "MGC タスク進捗管理 dashboard (React + Vite + Supabase)",
       "url": "https://mgc-shinchoku-kanri.vercel.app",
       "detected_at": "2026-05-30T02:00:04.795Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "game",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-05-31T03:30:04.756Z"
     }
   ],
-  "last_scan": "2026-05-31T03:00:04.964Z"
+  "last_scan": "2026-05-31T03:30:04.756Z"
 }
