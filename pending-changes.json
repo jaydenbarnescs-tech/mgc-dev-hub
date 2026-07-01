@@ -260,7 +260,115 @@
       "description": "WESTER/ICOCA ride history scraper — Python direct-API + Supabase sync",
       "url": "",
       "detected_at": "2026-06-02T05:00:04.751Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "cloq-setup",
+      "description": "CLOQ サービスページ 編集環境セットアップ (Git install + clone)",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "dm-console",
+      "description": "",
+      "url": "https://dm-console.vercel.app",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "elp-capabilities",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "gbizinfo-cli",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "hikkoshi-line-cli",
+      "description": "引越れんらく帳の手続きフローをCLI化する検証用ツール",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "kokunai-leadgen",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "MGC-inc.",
+      "description": "MGCのHP",
+      "url": "https://mgc-inc.vercel.app",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "monoblocc-lp",
+      "description": "",
+      "url": "https://monoblocc-preorder.vercel.app",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "sophia-voice-ai-demo",
+      "description": "",
+      "url": "https://sophia-voice-ai-flow.vercel.app",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "voice-ai-lp",
+      "description": "",
+      "url": "https://voice-ai-lp.vercel.app",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "voice-ai-scope-catalog",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "supertonic-chatbot",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-07-01T14:00:40.159Z"
     }
   ],
-  "last_scan": "2026-06-02T08:30:05.673Z"
+  "last_scan": "2026-07-01T14:00:40.159Z"
 }
