@@ -413,7 +413,16 @@
       "description": "",
       "url": "https://walkscape-guide.vercel.app",
       "detected_at": "2026-07-19T14:30:06.510Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "slack-gateway",
+      "description": "The single door between every system we run and Slack. Ejected agent-call baby, deployed on the mac mini.",
+      "url": "",
+      "detected_at": "2026-07-29T12:00:13.958Z"
     }
   ],
-  "last_scan": "2026-07-29T11:30:18.055Z"
+  "last_scan": "2026-07-29T12:00:13.958Z"
 }
