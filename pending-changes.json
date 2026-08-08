@@ -458,7 +458,16 @@
       "description": "Standalone WalkScape solver and planning toolkit",
       "url": "",
       "detected_at": "2026-08-02T15:00:07.860Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "search-broker",
+      "description": "Centralized search/crawl service — raw + agentic tiers. Replaces per-pipeline WebSearch (d2c-scout, outreach, etc).",
+      "url": "",
+      "detected_at": "2026-08-08T09:00:56.810Z"
     }
   ],
-  "last_scan": "2026-08-08T08:30:56.703Z"
+  "last_scan": "2026-08-08T09:00:56.810Z"
 }
