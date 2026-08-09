@@ -467,7 +467,16 @@
       "description": "Centralized search/crawl service — raw + agentic tiers. Replaces per-pipeline WebSearch (d2c-scout, outreach, etc).",
       "url": "",
       "detected_at": "2026-08-08T09:00:56.810Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "cloudflare-os",
+      "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+      "url": "https://os.cloudflare.app",
+      "detected_at": "2026-08-09T04:00:56.581Z"
     }
   ],
-  "last_scan": "2026-08-09T03:30:56.409Z"
+  "last_scan": "2026-08-09T04:00:56.581Z"
 }
