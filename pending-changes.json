@@ -476,7 +476,16 @@
       "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
       "url": "https://os.cloudflare.app",
       "detected_at": "2026-08-09T04:00:56.581Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "raftel-cloq-local-sourcing-api",
+      "description": "Raftel/CLOQ domestic Japan sourcing API docs for form sales research",
+      "url": "",
+      "detected_at": "2026-08-10T02:00:56.130Z"
     }
   ],
-  "last_scan": "2026-08-10T01:30:55.966Z"
+  "last_scan": "2026-08-10T02:00:56.130Z"
 }
