@@ -764,7 +764,16 @@
       "description": "agent-call persona: project-monitor",
       "url": "",
       "detected_at": "2026-08-13T10:00:56.814Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "osrs-ge-cli",
+      "description": "Deterministic terminal-first OSRS Grand Exchange CLI scanner",
+      "url": "",
+      "detected_at": "2026-08-13T11:00:57.563Z"
     }
   ],
-  "last_scan": "2026-08-13T10:30:56.286Z"
+  "last_scan": "2026-08-13T11:00:57.563Z"
 }
