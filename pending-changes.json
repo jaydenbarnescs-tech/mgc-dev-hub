@@ -494,7 +494,268 @@
       "description": "",
       "url": "",
       "detected_at": "2026-08-12T06:30:56.386Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-ai-akari-video",
+      "description": "agent-call persona: ai-akari-video",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-ai-crowdfunding-scout",
+      "description": "agent-call persona: ai-crowdfunding-scout",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-ai-sns-article",
+      "description": "agent-call persona: ai-sns-article",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-claude-mirror",
+      "description": "agent-call persona: claude-mirror",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-client-context-reconstructor",
+      "description": "agent-call persona: client-context-reconstructor",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-codex-image-director",
+      "description": "agent-call persona: codex-image-director",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-company-url-resolver",
+      "description": "agent-call persona: company-url-resolver",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-d2c-crowdfunding-contact-recovery",
+      "description": "agent-call persona: d2c-crowdfunding-contact-recovery",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-d2c-scout-inbound-email-triage-classify",
+      "description": "agent-call persona: d2c-scout-inbound-email-triage-classify",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-d2c-scout-mark-email-formulator",
+      "description": "agent-call persona: d2c-scout-mark-email-formulator",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-dev-implementer",
+      "description": "agent-call persona: dev-implementer",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-dev-planner",
+      "description": "agent-call persona: dev-planner",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-dev-reviewer",
+      "description": "agent-call persona: dev-reviewer",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-elevenlabs-prompts-helper",
+      "description": "agent-call persona: elevenlabs-prompts-helper",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-jayden-context",
+      "description": "agent-call persona: jayden-context",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-meta-agent-scout",
+      "description": "agent-call persona: meta-agent-scout",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-mirror-y",
+      "description": "agent-call persona: mirror-y",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-monoblocc-campaign-advisor",
+      "description": "agent-call persona: monoblocc-campaign-advisor",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-music-dj",
+      "description": "agent-call persona: music-dj",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-past-workflow-reconstructor",
+      "description": "agent-call persona: past-workflow-reconstructor",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-raftel-cloq-local-sourcing-enricher",
+      "description": "agent-call persona: raftel-cloq-local-sourcing-enricher",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-railway-operator",
+      "description": "agent-call persona: railway-operator",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-secret-file-custodian",
+      "description": "agent-call persona: secret-file-custodian",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-shirtpod",
+      "description": "agent-call persona: shirtpod",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-slack-gateway",
+      "description": "agent-call persona: slack-gateway",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-sophia",
+      "description": "agent-call persona: sophia",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-todo-monitor",
+      "description": "agent-call persona: todo-monitor",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-walkscape-goal-parser",
+      "description": "agent-call persona: walkscape-goal-parser",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-walkscape-planner",
+      "description": "agent-call persona: walkscape-planner",
+      "url": "",
+      "detected_at": "2026-08-13T09:30:59.066Z"
     }
   ],
-  "last_scan": "2026-08-13T09:00:58.091Z"
+  "last_scan": "2026-08-13T09:30:59.066Z"
 }
