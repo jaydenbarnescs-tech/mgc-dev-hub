@@ -800,7 +800,14 @@
       "description": "monoblocc.jp Shopify theme (Dawn-based, JP store) — CLI workflow with staging theme + theme-check gate",
       "url": "",
       "detected_at": "2026-08-28T06:30:56.614Z"
+    },
+    {
+      "type": "new_vm_dir",
+      "owner": "jayden",
+      "dir": "walkscape-live",
+      "url": "https://mgc-pass-proxy.duckdns.org/walkscape-live/",
+      "detected_at": "2026-09-14T06:30:57.191Z"
     }
   ],
-  "last_scan": "2026-09-14T06:00:57.206Z"
+  "last_scan": "2026-09-14T06:30:57.191Z"
 }
