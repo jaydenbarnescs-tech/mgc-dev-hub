@@ -807,7 +807,16 @@
       "dir": "walkscape-live",
       "url": "https://mgc-pass-proxy.duckdns.org/walkscape-live/",
       "detected_at": "2026-09-14T06:30:57.191Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "rentech-aichan-archive",
+      "description": "Frozen archive of Rentec AIちゃん (ai_rentech_internalAIPlatform) at shutdown 2026-09-15",
+      "url": "",
+      "detected_at": "2026-09-15T05:30:58.660Z"
     }
   ],
-  "last_scan": "2026-09-15T05:00:56.249Z"
+  "last_scan": "2026-09-15T05:30:58.660Z"
 }
