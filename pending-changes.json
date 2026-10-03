@@ -832,7 +832,25 @@
       "dir": "mgc-board",
       "url": "https://mgc-pass-proxy.duckdns.org/mgc-board/",
       "detected_at": "2026-09-25T03:01:09.852Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "email-evolve",
+      "description": "CLOQ cold-email evolution: prompt GA, judges, evaluators",
+      "url": "",
+      "detected_at": "2026-10-03T01:00:57.728Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "ga-observatory",
+      "description": "Evolution Observatory: monitoring dashboard + collectors for the CLOQ email GA",
+      "url": "",
+      "detected_at": "2026-10-03T01:00:57.728Z"
     }
   ],
-  "last_scan": "2026-10-03T00:30:58.010Z"
+  "last_scan": "2026-10-03T01:00:57.728Z"
 }
