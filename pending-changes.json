@@ -850,7 +850,16 @@
       "description": "Evolution Observatory: monitoring dashboard + collectors for the CLOQ email GA",
       "url": "",
       "detected_at": "2026-10-03T01:00:57.728Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "onsen-nikki",
+      "description": "温泉日記 — Jayden & Masako's website",
+      "url": "",
+      "detected_at": "2026-10-04T12:01:08.053Z"
     }
   ],
-  "last_scan": "2026-10-04T11:30:58.089Z"
+  "last_scan": "2026-10-04T12:01:08.053Z"
 }
