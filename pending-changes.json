@@ -877,7 +877,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-10-05T01:01:00.268Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "mugen-rittai-zushitsu",
+      "description": "夢現 立体図室 — floor plan drawing to walkable 3D (sales demo for 夢現設計室). Fork of openPlan3D (MIT).",
+      "url": "",
+      "detected_at": "2026-10-05T02:00:58.275Z"
     }
   ],
-  "last_scan": "2026-10-05T01:31:00.780Z"
+  "last_scan": "2026-10-05T02:00:58.275Z"
 }
