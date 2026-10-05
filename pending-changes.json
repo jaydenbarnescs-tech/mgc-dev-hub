@@ -886,7 +886,14 @@
       "description": "夢現 立体図室 — floor plan drawing to walkable 3D (sales demo for 夢現設計室). Fork of openPlan3D (MIT).",
       "url": "",
       "detected_at": "2026-10-05T02:00:58.275Z"
+    },
+    {
+      "type": "new_vm_dir",
+      "owner": "jayden",
+      "dir": "sekou-sim.new",
+      "url": "https://mgc-pass-proxy.duckdns.org/sekou-sim.new/",
+      "detected_at": "2026-10-05T02:31:00.275Z"
     }
   ],
-  "last_scan": "2026-10-05T02:00:58.275Z"
+  "last_scan": "2026-10-05T02:31:00.275Z"
 }
