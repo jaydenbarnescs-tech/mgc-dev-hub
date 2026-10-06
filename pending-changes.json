@@ -916,7 +916,14 @@
       "description": "agent-call persona: work-hours-reporter (notion_tasks.py, ntask, daily recount)",
       "url": "",
       "detected_at": "2026-10-06T01:33:41.569Z"
+    },
+    {
+      "type": "new_vm_dir",
+      "owner": "jayden",
+      "dir": "mgc-showcase",
+      "url": "https://mgc-pass-proxy.duckdns.org/mgc-showcase/",
+      "detected_at": "2026-10-06T08:31:01.238Z"
     }
   ],
-  "last_scan": "2026-10-06T08:00:58.066Z"
+  "last_scan": "2026-10-06T08:31:01.238Z"
 }
