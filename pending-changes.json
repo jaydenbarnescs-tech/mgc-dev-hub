@@ -941,7 +941,16 @@
       "description": "One-cell apparel tag-swap machine: research, MuJoCo sim, sourced real parts, drawings and 3D",
       "url": "",
       "detected_at": "2026-10-07T08:01:03.948Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-open-webcam-atlas",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-10-07T10:30:58.813Z"
     }
   ],
-  "last_scan": "2026-10-07T10:01:15.577Z"
+  "last_scan": "2026-10-07T10:30:58.813Z"
 }
