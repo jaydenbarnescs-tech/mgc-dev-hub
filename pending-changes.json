@@ -923,7 +923,16 @@
       "dir": "mgc-showcase",
       "url": "https://mgc-pass-proxy.duckdns.org/mgc-showcase/",
       "detected_at": "2026-10-06T08:31:01.238Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "open-webcam-atlas",
+      "description": "Every open public webcam on one monochrome globe, plus a tiny nearest-camera API.",
+      "url": "https://open-webcam-atlas.vercel.app",
+      "detected_at": "2026-10-07T06:01:04.577Z"
     }
   ],
-  "last_scan": "2026-10-07T05:31:03.360Z"
+  "last_scan": "2026-10-07T06:01:04.577Z"
 }
