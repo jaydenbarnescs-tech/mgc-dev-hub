@@ -966,7 +966,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-10-13T07:01:01.654Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "fb-video-subs",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-10-15T04:31:00.509Z"
     }
   ],
-  "last_scan": "2026-10-15T04:01:02.481Z"
+  "last_scan": "2026-10-15T04:31:00.509Z"
 }
