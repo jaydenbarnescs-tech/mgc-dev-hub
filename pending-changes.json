@@ -993,7 +993,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-10-20T04:31:06.850Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-nudge",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-10-21T01:01:04.055Z"
     }
   ],
-  "last_scan": "2026-10-21T00:30:57.277Z"
+  "last_scan": "2026-10-21T01:01:04.055Z"
 }
