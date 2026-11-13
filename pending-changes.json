@@ -1038,7 +1038,16 @@
       "description": "",
       "url": "",
       "detected_at": "2026-11-12T15:31:01.474Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "agent-rpa-standard",
+      "description": "rpa-standard agent: encasing standard + audit for Sophia RPA sites",
+      "url": "",
+      "detected_at": "2026-11-13T00:30:57.920Z"
     }
   ],
-  "last_scan": "2026-11-13T00:01:00.172Z"
+  "last_scan": "2026-11-13T00:30:57.920Z"
 }
