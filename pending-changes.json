@@ -1047,7 +1047,16 @@
       "description": "rpa-standard agent: encasing standard + audit for Sophia RPA sites",
       "url": "",
       "detected_at": "2026-11-13T00:30:57.920Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "matsuo",
+      "github": "koko1056-inv",
+      "repo": "card-games-play",
+      "description": "",
+      "url": "",
+      "detected_at": "2026-11-14T16:01:02.665Z"
     }
   ],
-  "last_scan": "2026-11-14T15:30:59.028Z"
+  "last_scan": "2026-11-14T16:01:02.665Z"
 }
