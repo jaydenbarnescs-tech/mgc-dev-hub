@@ -1074,7 +1074,16 @@
       "description": "Barehand Paradox: iPhone pixel-art guard game (SwiftUI)",
       "url": "",
       "detected_at": "2026-11-23T02:01:03.759Z"
+    },
+    {
+      "type": "new_repo",
+      "owner": "jayden",
+      "github": "jaydenbarnescs-tech",
+      "repo": "monoblocc-jp-static",
+      "description": "",
+      "url": "https://monoblocc-jp-static.vercel.app",
+      "detected_at": "2026-11-24T02:30:59.258Z"
     }
   ],
-  "last_scan": "2026-11-24T02:01:00.250Z"
+  "last_scan": "2026-11-24T02:30:59.258Z"
 }
